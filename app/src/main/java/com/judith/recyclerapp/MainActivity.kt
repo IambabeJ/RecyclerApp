@@ -1,10 +1,11 @@
-package com.uche.recyclerapp
+package com.judith.recyclerapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.uche.recyclerapp.databinding.ActivityMainBinding
-import com.uche.recyclerapp.models.User
+import com.judith.recyclerapp.databinding.ActivityMainBinding
+import com.judith.recyclerapp.models.User
+
 
 class MainActivity : AppCompatActivity(), RecyclerAdapter.OnUserClickListener {
     private lateinit var binding: ActivityMainBinding
@@ -19,103 +20,103 @@ class MainActivity : AppCompatActivity(), RecyclerAdapter.OnUserClickListener {
         val users: List<User> = listOf(
             User(
                 R.drawable.ic_img1,
-                "Uche",
-                "Echemunor",
+                "Cynthia",
+                "Blessing",
             ),
             User(
                 R.drawable.ic_img8,
-                "Emeka",
-                "Alex",
+                "Ashiedu",
+                "Ngozi",
             ),
             User(
-                R.drawable.ic_img10,
-                "Williams",
-                "John",
+                R.drawable.ic_img7,
+                "Wilson",
+                "Johnny",
             ),
             User(
                 R.drawable.ic_img4,
-                "Paul",
-                "Chucks",
+                "Paulson",
+                "Chuckwuka",
             ),
             User(
                 R.drawable.ic_img1,
-                "oluchi",
-                "chukwu",
+                "Oluoma",
+                "chukwudi",
             ),
             User(
                 R.drawable.ic_img7,
                 "Judith",
-                "Alonso",
+                "Alphonsus",
             ),
             User(
                 R.drawable.ic_img8,
                 "Jennifer",
-                "Echemunor",
+                "Echezona",
             ),
             User(
                 R.drawable.ic_img1,
-                "Ijeoma",
-                "Echemunor",
+                "Isioma",
+                "Echezona",
             ),
             User(
-                R.drawable.ic_img10,
-                "Samuel",
-                "Alexander",
+                R.drawable.ic_img9,
+                "Samson",
+                "Alexandra",
             ),
             User(
                 R.drawable.ic_img1,
-                "Sofia",
-                "Chukwu",
+                "Sophia",
+                "Chukwuma",
             ),
             User(
                 R.drawable.ic_img7,
-                "Uche",
-                "Echemunor",
+                "Uchenna",
+                "Echezona",
             ),
             User(
                 R.drawable.ic_img8,
-                "Uc",
-                "munor",
+                "Ukamaka",
+                "Muna",
             ),
             User(
-                R.drawable.ic_img10,
-                "Uche",
-                "Echemunor",
+                R.drawable.ic_img2,
+                "Ugo",
+                "Echezona",
             ),
             User(
-                R.drawable.ic_img10,
-                "Affy",
-                "Azonye",
+                R.drawable.ic_img9,
+                "Afamefune",
+                "Ashionye",
             ),
             User(
                 R.drawable.ic_img8,
-                "Uche",
-                "Echemunor",
+                "Uchenna",
+                "Echezona",
             ),
             User(
                 R.drawable.ic_img7,
-                "Niyi",
-                "Eju",
+                "Omoruyi",
+                "Uju",
             ),
             User(
                 R.drawable.ic_img8,
-                "Uche",
-                "Echemunor",
+                "Uchenna",
+                "Echezona",
             ),
             User(
                 R.drawable.ic_img7,
-                "Mathew",
-                "Dabo",
+                "Matthew",
+                "Dolapo",
             ),
             User(
                 R.drawable.ic_img8,
-                "Gift",
-                "Iseoma",
+                "Gifted",
+                "Isioma",
             ),
             User(
                 R.drawable.ic_img7,
-                "seyi",
-                "Dabo",
+                "Segun",
+                "Dolapo",
             ),
         )
         myRecyclerAdapter = RecyclerAdapter(users, this)

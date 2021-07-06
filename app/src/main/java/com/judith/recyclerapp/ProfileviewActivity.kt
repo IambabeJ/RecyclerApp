@@ -1,8 +1,8 @@
-package com.uche.recyclerapp
+package com.judith.recyclerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.uche.recyclerapp.databinding.ActivityProfileviewBinding
+import com.judith.recyclerapp.databinding.ActivityProfileviewBinding
 
 class ProfileviewActivity : AppCompatActivity() {
     lateinit var binding: ActivityProfileviewBinding

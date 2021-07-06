@@ -1,4 +1,4 @@
-package com.uche.recyclerapp
+package com.judith.recyclerapp
 
 import org.junit.Test
 

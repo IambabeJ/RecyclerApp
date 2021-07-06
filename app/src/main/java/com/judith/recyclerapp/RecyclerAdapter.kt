@@ -1,12 +1,12 @@
-package com.uche.recyclerapp
+package com.judith.recyclerapp
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.uche.recyclerapp.databinding.ItemDesignBinding
-import com.uche.recyclerapp.models.User
+import com.judith.recyclerapp.databinding.ItemDesignBinding
+import com.judith.recyclerapp.models.User
 
-class RecyclerAdapter(val userList: List<User>, var clickListener: OnUserClickListener) :
+class RecyclerAdapter(val uList: List<User>, var clickListener: OnUserClickListener) :
     RecyclerView.Adapter<RecyclerAdapter.myViewHolder>() {
 
 
@@ -21,13 +21,13 @@ class RecyclerAdapter(val userList: List<User>, var clickListener: OnUserClickLi
         holderMy: myViewHolder,
         position: Int,
     ) {
-        holderMy.bindItems(userList[position])
-        holderMy.initialize(userList[position], clickListener)
+        holderMy.bindItems(uList[position])
+        holderMy.initialize(uList[position], clickListener)
     }
 
     // this method is giving the size of the list
     override fun getItemCount(): Int {
-        return userList.size
+        return uList.size
     }
 
     inner class myViewHolder(var binding: ItemDesignBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -39,13 +39,13 @@ class RecyclerAdapter(val userList: List<User>, var clickListener: OnUserClickLi
 
         }
 
-        fun initialize(userList: User, action: OnUserClickListener) {
-            binding.imageview1.setImageResource(userList.imageview1)
-            binding.text1.text = userList.textview1
-            binding.text2.text = userList.textview2
+        fun initialize(uList: User, action: OnUserClickListener) {
+            binding.imageview1.setImageResource(uList.imageview1)
+            binding.text1.text = uList.textview1
+            binding.text2.text = uList.textview2
 
             binding.root.setOnClickListener {
-                action.onUserClick(userList, adapterPosition)
+                action.onUserClick(uList, adapterPosition)
             }
         }
     }
